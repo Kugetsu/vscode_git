@@ -11,12 +11,13 @@ import string
 import tkinter as tk
 from tkinter import ttk
 
-a = 10
-b = 10
-c = 10
-alpha = 135
-beta = 135
-gamma = 60
+#06: 7.302 5.873 3.882 91.13 112.6 92.43
+a = 15
+b = 5
+c = 5
+alpha = 91.13
+beta = 112.6
+gamma = 92.43
 
 #一些额外变量的定义
 cmd=0
