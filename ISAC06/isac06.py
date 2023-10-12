@@ -3,7 +3,7 @@ import numpy as np
 import tkinter as tk
 import matplotlib.pyplot as plt
 from mpl_toolkits import mplot3d 
-from tkinter import ttk
+from tkinter import tk
 from tkinter import messagebox as mbox
 from tkinter import filedialog as fd
 import pandas as pd
@@ -44,7 +44,7 @@ k_num=10
 
 file_name='/Users/wangyue/vscode_git/ISAC06/read.xlsx'
 
-df_1=pd.read_excel(file_name, sheet_name='phi_3')  #调整输入表格，避免重复输入
+df_1=pd.read_excel(file_name, sheet_name='phi_oniom2')  #调整输入表格，避免重复输入
 df_5=pd.read_excel(file_name, sheet_name='gamma')
 df_6=pd.read_excel(file_name, sheet_name='k-path')
 df_1=df_1.fillna(0)
@@ -152,6 +152,9 @@ for r in range(0,route_num):
         #plt.plot(x,np.sqrt(np_eigen[r][p][9]/0.000059),'c-o')
         #plt.plot(x,np.sqrt(np_eigen[r][p][10]/0.000059),'m-s')
         #plt.plot(x,np.sqrt(np_eigen[r][p][11]/0.000059),'y-^')
+
+        #xushubufen
+        plt.plot(x,sf*np_eigen[r][p][0]/0.000059,color='r',marker='x')
 
 plt.show()
 
